@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CLoginActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".LoginActivity">
+
+    <!--IMPORTANTE - scaleType: Ajustar la imagen al inicio-->
+
+    <ImageView
+        android:id="@+id/iVLogin"
+        android:layout_width="409dp"
+        android:layout_height="730dp"
+        android:alpha="?android:attr/spotShadowAlpha"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foto1"
+        tools:targetApi="lollipop" />
+
+
+    <ImageView
+        android:id="@+id/iModa"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/moda" />
+
+    <TextView
+        android:id="@+id/tvDress"
+        android:layout_width="225dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="@font/alegreya_sc_black"
+        android:text="DRESS"
+        android:textColor="@color/white"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvVintage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvVintage"
+        android:layout_width="155dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/allura"
+        android:text="Vintage"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
