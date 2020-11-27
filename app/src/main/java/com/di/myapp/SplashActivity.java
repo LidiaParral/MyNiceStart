@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,9 +19,14 @@ public class SplashActivity extends AppCompatActivity {
 
 
 
-        ImageView mySubtitle = (ImageView) findViewById(R.id.iModa);
-        Animation mymain = AnimationUtils.loadAnimation(this, R.anim.faiden);
-        mySubtitle.startAnimation(mymain);
+        TextView title = (TextView) findViewById(R.id.tvDress);
+        Animation mymain = AnimationUtils.loadAnimation(this, R.anim.textview);
+        title.startAnimation(mymain);
+
+        TextView subtitle = (TextView) findViewById(R.id.tvVintage);
+        Animation mymain2 = AnimationUtils.loadAnimation(this, R.anim.textview);
+        subtitle.startAnimation(mymain2);
+
 
 
         openApp(true);
@@ -33,7 +39,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent(SplashActivity
-                        .this, SignUpActivity.class);
+                        .this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

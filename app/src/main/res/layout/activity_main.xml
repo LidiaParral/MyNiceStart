@@ -30,11 +30,6 @@
         android:background="#00897B"
         tools:ignore="MissingConstraints">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/idMenu"
-            android:layout_width="match_parent"
-            android:layout_height="45dp" />
-
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 

@@ -5,7 +5,6 @@
     android:id="@+id/CSignUp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:alpha="0.9"
     android:background="@color/colorSalmon"
     android:foregroundGravity="center"
     tools:context=".SignUpActivity">
@@ -20,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/moda" />
 
+<!--    Como poner los textview e edittex de un color blanco que no sea transparente-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
         android:layout_width="338dp"
@@ -95,7 +95,6 @@
         app:backgroundTint="#0EB5A4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toEndOf="@+id/btnSignUp"
         android:onClick="Cancel"
         tools:ignore="MissingConstraints" />
