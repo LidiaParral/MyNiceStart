@@ -5,6 +5,7 @@
     android:id="@+id/CSignUp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alpha="0.9"
     android:background="@color/colorSalmon"
     android:foregroundGravity="center"
     tools:context=".SignUpActivity">
@@ -23,7 +24,6 @@
         android:id="@+id/email"
         android:layout_width="338dp"
         android:layout_height="wrap_content"
-        android:alpha="0.7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/username"
@@ -40,7 +40,6 @@
         android:id="@+id/username"
         android:layout_width="338dp"
         android:layout_height="wrap_content"
-        android:alpha="0.7"
         android:layout_marginTop="145dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +58,6 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         android:layout_width="338dp"
-        android:alpha="0.7"
         android:layout_height="wrap_content"
         app:endIconMode="password_toggle"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +83,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnCancel"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="btnSignUp"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -100,7 +97,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.787"
         app:layout_constraintStart_toEndOf="@+id/btnSignUp"
+        android:onClick="Cancel"
         tools:ignore="MissingConstraints" />
 
+    <ImageView
+        android:layout_width="425dp"
+        android:layout_height="745dp"
+        android:alpha="0.1"
+        android:background="@drawable/foto25"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="lollipop" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
