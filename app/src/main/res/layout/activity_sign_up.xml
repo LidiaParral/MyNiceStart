@@ -19,6 +19,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/moda" />
 
+    <ImageView
+        android:layout_width="425dp"
+        android:layout_height="745dp"
+        android:alpha="0.1"
+        android:background="@drawable/foto25"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:targetApi="lollipop" />
+
 <!--    Como poner los textview e edittex de un color blanco que no sea transparente-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
@@ -75,7 +88,7 @@
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="117dp"
-        android:layout_height="49dp"
+        android:layout_height="50dp"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="150dp"
         android:text="@string/SignUp"
@@ -99,17 +112,6 @@
         android:onClick="Cancel"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:layout_width="425dp"
-        android:layout_height="745dp"
-        android:alpha="0.1"
-        android:background="@drawable/foto25"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:targetApi="lollipop" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
