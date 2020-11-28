@@ -1,6 +1,7 @@
 package com.di.myapp;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.animation.Animation;
@@ -9,6 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -26,7 +30,6 @@ public class SplashActivity extends AppCompatActivity {
         TextView subtitle = (TextView) findViewById(R.id.tvVintage);
         Animation mymain2 = AnimationUtils.loadAnimation(this, R.anim.textview);
         subtitle.startAnimation(mymain2);
-
 
 
         openApp(true);

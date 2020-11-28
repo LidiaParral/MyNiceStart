@@ -5,7 +5,6 @@
     android:id="@+id/CSignUp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSalmon"
     android:foregroundGravity="center"
     tools:context=".SignUpActivity">
 
@@ -20,9 +19,10 @@
         app:srcCompat="@drawable/moda" />
 
     <ImageView
+        android:id="@+id/iFondo"
         android:layout_width="425dp"
         android:layout_height="745dp"
-        android:alpha="0.1"
+        android:alpha="0.5"
         android:background="@drawable/foto25"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,6 +31,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
         tools:targetApi="lollipop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/scrim"
+        android:visibility="visible"/>
 
 <!--    Como poner los textview e edittex de un color blanco que no sea transparente-->
     <com.google.android.material.textfield.TextInputLayout
@@ -92,15 +99,17 @@
         android:layout_marginStart="84dp"
         android:layout_marginBottom="150dp"
         android:text="@string/SignUp"
-        app:backgroundTint="#0EB5A4"
+        android:layout_gravity ="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnCancel"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:theme="@style/ButtonStraight"
+        android:backgroundTint="#0EB5A4"/>
 
     <Button
         android:id="@+id/btnCancel"
-        android:layout_width="119dp"
+        android:layout_width="117dp"
         android:layout_height="50dp"
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="150dp"
@@ -108,10 +117,9 @@
         app:backgroundTint="#0EB5A4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/btnSignUp"
-        android:onClick="Cancel"
         tools:ignore="MissingConstraints" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
