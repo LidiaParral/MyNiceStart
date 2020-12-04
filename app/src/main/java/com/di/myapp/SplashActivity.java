@@ -14,6 +14,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
 
+/**
+*  Ventana de bienvenida con animación
+*  @author lidia
+*  @see LoginActivity
+ */
+
 public class SplashActivity extends AppCompatActivity {
 
     @Override

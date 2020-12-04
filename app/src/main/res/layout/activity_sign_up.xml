@@ -8,15 +8,6 @@
     android:foregroundGravity="center"
     tools:context=".SignUpActivity">
 
-    <ImageView
-        android:id="@+id/iModa"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/moda" />
 
     <ImageView
         android:id="@+id/iFondo"
@@ -32,6 +23,7 @@
         tools:ignore="MissingConstraints"
         tools:targetApi="lollipop" />
 
+
     <View
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,6 +31,24 @@
         android:background="@drawable/scrim"
         android:visibility="visible"/>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/username"
+        android:layout_width="338dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iFondo"
+        app:startIconDrawable="@drawable/username"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Username" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 <!--    Como poner los textview e edittex de un color blanco que no sea transparente-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email"
@@ -56,24 +66,7 @@
             android:hint="E-mail" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/username"
-        android:layout_width="338dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="145dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/iModa"
-        app:startIconDrawable="@drawable/username"
-        tools:ignore="MissingConstraints">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:hint="Username" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
@@ -91,6 +84,17 @@
             android:background="@color/white"
             android:hint="Password" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iModa"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/moda"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btnSignUp"
