@@ -12,4 +12,4 @@ Splash | Login
 
 Sign Up | Main | Main2
 ------- | ---- | -----
-![](img/signup.png) | ![](img/main.png) | ![](img/main2.png)
+![](img/SignUp.png) | ![](img/Main.png) | ![](img/Main2.png)
