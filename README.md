@@ -1,7 +1,10 @@
-# MyApp
+# MyNiceStart
+
+[LidiaParral en github](https://github.com/LidiaParral)
+
 **Aplicación de moda**
 
-* My Nice Start
+* MyApp
   * Subelemento
 
 
