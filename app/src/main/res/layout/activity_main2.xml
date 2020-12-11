@@ -22,10 +22,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        
+
 
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSalir"
+        android:layout_width="375dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="volver"
+        android:text="Volver"
+        style="@style/ButtonStraight"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.button.MaterialButton>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
