@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="colorSalmon">#F78787</color>
     <color name="myapp_launcher_background">#E0608F</color>
+    <color name="colorAzulOscuro">#0299AC</color>
 </resources>
