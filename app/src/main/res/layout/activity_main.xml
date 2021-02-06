@@ -44,13 +44,7 @@
     </com.google.android.material.button.MaterialButton>
 
 
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/myswipe"
-        tools:ignore="MissingConstraints">
 
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

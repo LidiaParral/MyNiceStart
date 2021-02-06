@@ -24,7 +24,6 @@ import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    
+
 
     public void ok(View view) {
         Intent i = new Intent(this, MainActivity2.class);
