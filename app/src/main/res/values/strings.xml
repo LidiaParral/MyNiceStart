@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">MyNiceStart</string>
     <string name="SignUp">SIGN UP</string>
+    <string name="camera">camera</string>
+    <string name="action_settigns">Settings</string>
+    <string name="search">Search</string>
 </resources>
