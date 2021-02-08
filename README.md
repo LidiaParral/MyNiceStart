@@ -5,7 +5,7 @@
 **Aplicación de moda**
 
 * MyApp
-  * Subelemento
+  * Vintage Clothes
 
 
 Splash | Login
@@ -13,9 +13,9 @@ Splash | Login
 ![](img/splash.png) | ![](img/login.png)
 
 
-Sign Up | Main2 | Main
-------- | ----- | -----
-![](img/SignUp.png) | ![](img/Main2.png) | ![](img/Main.png)
+Sign Up | Main2 
+------- | ----- 
+![](img/SignUp.png) | ![](img/Main2.png) |
 
 CardView | AppBar | AlertDialog
 -------- | ------ | -----------
