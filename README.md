@@ -15,7 +15,7 @@ Splash | Login
 
 Sign Up | Main2 | Main
 ------- | ----- | -----
-![](img/SignUp.png) | ![](img/Main2.png) | ![](img/main_1.png)
+![](img/SignUp.png) | 
 
 CardView | AppBar | AlertDialog
 -------- | ------ | -----------
