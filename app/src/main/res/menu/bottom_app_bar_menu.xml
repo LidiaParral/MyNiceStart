@@ -12,13 +12,11 @@
         android:id="@+id/bottom_app_bar_menu_share"
         android:title="@string/app_bar_menu_share"
         android:icon="@drawable/ic_share"
-        android:iconTint="@color/black"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/bottom_app_bar_menu_bookmark"
         android:title="@string/app_bar_menu_bookmark"
         android:icon="@drawable/ic_bookmark"
-        android:iconTint="@color/black"
         app:showAsAction="ifRoom"/>
 
 
