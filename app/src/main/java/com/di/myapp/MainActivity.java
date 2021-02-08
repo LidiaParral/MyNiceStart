@@ -1,14 +1,7 @@
 package com.di.myapp;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
-
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,31 +9,91 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
-
+    //private SwipeRefreshLayout swipeLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setLogo(R.mipmap.myapp_launcher);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.moda);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
+        //No muestra imagen en la ejecucción del Activity
         ImageView mycontext = findViewById(R.id.imgProfile);
         registerForContextMenu(mycontext);
 
+        /*swipeLayout = findViewById(R.id.myswipe);
+        swipeLayout.setOnRefreshListener((androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener) mOnRefreshListener);*/
+
+
+
+
+        ImageView context = findViewById(R.id.imgProfile);
 
     }
 
+    public void showAlertDialogButtonClicked(MainActivity view) {
 
+        // setup the alert builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+
+        //el dialogo estandar tiene título/icono pero podemos sustituirlo por un XML a medida
+//        builder.setTitle("Achtung!");
+//        builder.setMessage("Where do you go?");
+//        builder.setIcon(R.drawable.ic_action_name_dark);
+
+
+        // un XML a medida para el diálogo
+        builder.setView(getLayoutInflater().inflate(R.layout.alertdialog_view, null));
+
+
+        // create and show the alert dialog
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
+ /*   protected SwipeRefreshLayout.OnRefreshListener mOnRefreshListener = new SwipeRefreshLayout.OnRefreshListener() {
+        @Override
+        public void onRefresh() {
+
+            //    opción TOAST
+            //
+            //          Toast toast0 = Toast.makeText(MainContextActivity.this, "going swipeREFRESH", Toast.LENGTH_LONG);
+            //          toast0.show();
+
+
+            //   opción SNACKBAR
+
+//           SUSTITUIR POR CONSTRAINT EN SU CASO
+            final ConstraintLayout mLayout = (ConstraintLayout) findViewById(R.id.activity_main);
+
+            Snackbar snackbar = Snackbar
+                    .make(mLayout, "fancy a Snack while you refresh?", Snackbar.LENGTH_LONG)
+                    .setAction("UNDO", new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Snackbar snackbar1 = Snackbar.make(mLayout, "Action is restored!", Snackbar.LENGTH_SHORT);
+                            snackbar1.show();
+                        }
+                    });
+
+            snackbar.show();
+            swipeLayout.setRefreshing(false);
+
+        }
+    };
+*/
     public void ok(View view) {
         Intent i = new Intent(this, MainActivity2.class);
         startActivity(i);
@@ -82,10 +135,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if(id == R.id.action_settings){
-            return true;
+            Toast.makeText(this,"going SETTINGS",Toast.LENGTH_LONG).show();
         }
-        if (id == R.id.camera){
-            Toast.makeText(this,"going APPBAR CAMERA",Toast.LENGTH_LONG).show();
+        if (id == R.id.heart){
+            showAlertDialogButtonClicked(MainActivity.this);
+
         }
         return super.onOptionsItemSelected(item);
     }

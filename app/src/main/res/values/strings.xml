@@ -1,7 +1,13 @@
 <resources>
     <string name="app_name">MyNiceStart</string>
     <string name="SignUp">SIGN UP</string>
-    <string name="camera">camera</string>
+    <string name="heart">Heart</string>
     <string name="action_settigns">Settings</string>
     <string name="search">Search</string>
+    <string name="btn_ok">OK</string>
+    <string name="name">Lidia Parral</string>
+    <string name="profession">Work in the world of fashion</string>
+    <string name="app_bar_menu_share">share</string>
+    <string name="app_bar_menu_bookmark">Bookmark</string>
+    <string name="app_bar_menu_search">Search</string>
 </resources>
