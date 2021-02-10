@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools = "http://schemas.android.com/tools"
+    tools:context="com.di.myapp.MainActivity">
+
+    <item
+        android:id="@+id/search"
+        android:title="@string/search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:iconTint="@color/black"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/heart"
+        android:icon="@drawable/heart"
+        android:iconTint="@color/black"
+        android:title="@string/heart"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settigns"
+        app:showAsAction="never"/>
+</menu>
